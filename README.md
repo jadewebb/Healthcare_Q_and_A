@@ -22,10 +22,12 @@ Dataset was shuffled and split into training, validation, and testing sets (80:1
 
 Question-answer pairs were mapped to the proper "messages" format for compatability with Llama 3.1
 
-   ```"messages": [
+   ```
+      "messages": [
           {"role": "user", "content": <question>},
           {"role": "assistant", "content": <answer>}
-      ]```
+      ]
+   ```
 
 # Llama 3.1 Fine-Tuning using QLoRA
 

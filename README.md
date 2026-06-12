@@ -12,7 +12,7 @@ MedQuAD (Medical Question Answering Dataset)
 
    - 16412 samples of consumer medical question-answer pairs about diseases, drugs, and other medical entities, extracted from 12 trusted medical websites
    
-      - Subset of the original 47457 sample MedQuAD dataset, as samples under the MedlinePlus copyright were removed
+      - Subset of the original 47457 sample MedQuAD dataset, as samples under the MedlinePlus copyright were omitted
     
 ## Preprocessing
 

@@ -20,7 +20,7 @@ Dataset was loaded, inspected, and cleaned down to 16345 samples, then saved as 
 
 Dataset was shuffled and split into training, validation, and testing sets (80:10:10)
 
-Question-answer pairs were mapped to the proper "messages" format for compatability with Llama 3.1
+Question-answer pairs were mapped to the proper conversation format for compatability with Llama 3.1
 
    ```
       "messages": [
@@ -31,7 +31,24 @@ Question-answer pairs were mapped to the proper "messages" format for compatabil
 
 # Llama 3.1 Fine-Tuning using QLoRA
 
+**Llama 3.1 8B Instruct** tokenizer and pretrained model were loaded with **4-bit normal float quantization** using transformers
 
+**QLoRA PEFT configuration** and **SFT trainer** hyperparameters were tuned for optimal fine-tuning efficiency, memory usage, and metric accuracy
 
+   - **Key Considerations**
+
+       - **General Considerations**: stable α=2r LoRA scaling, NF4 quantization
+
+       - **Llama 3.1 Archiecture**: full linear module targeting, custom training-compatible chat template
+         
+       - **NVIDIA A100 GPU**: optimized 4x4=16 global batch size, native bfloat16 hardware acceleration, full context learning with truncation, paged 8-bit optimization
+         
+       - **Q&A Structure**: masked instruction loss calculation, sequence isolation
+
+       - **Experiment Monitoring**: real-time TensorBoard telemetry, automated step-wise validation and checkpointing, early stopping
+
+Fine-tuning was terminated after 200 steps, as the validation loss stabilized
+
+![Llama 3.1 QLoRA Performance Metrics](https://raw.githubusercontent.com/jadewebb/Healthcare_Q_and_A/main/log_metrics.png)
 
 

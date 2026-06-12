@@ -1,4 +1,4 @@
-## Healthcare Q&A
+# Healthcare Q&A
 
 Fine-tuning Llama 3.1 using QLoRA to perform healthcare Q&A
 

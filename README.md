@@ -39,7 +39,7 @@ Question-answer pairs were mapped to the proper conversation format for compatab
 
        - **General Considerations**: stable α=2r LoRA scaling, NF4 quantization
 
-       - **Llama 3.1 Archiecture**: full linear module targeting, custom training-compatible chat template
+       - **Llama 3.1 Architecture**: full linear module targeting, custom training-compatible chat template
          
        - **NVIDIA A100 GPU**: optimized 4x4=16 global batch size, native bfloat16 hardware acceleration, full context learning with truncation, paged 8-bit optimization
          

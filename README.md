@@ -58,3 +58,16 @@ Visualizations were created for Training and Validation Loss, Entropy, and Accur
 <p align="center">
 <img src="https://raw.githubusercontent.com/jadewebb/Healthcare_Q_and_A/main/log_metrics.png" width="700"></p>
 
+## Evaluation
+
+A **batched generation loop** was used to generate answers for all test set questions, which were evaluated through comparison to ground-truth answers using **BLEU** and **ROUGE** metrics
+
+Metric | Score
+--- | ---
+BLEU | 0.1507
+ROUGE-1 | 0.3371
+ROUGE-2 | 0.1459
+ROUGE-L: 0.2088
+
+Performance demonstrates that the model successfully generates coherent, multi-word medical phrasing that aligns with professional, consumer-aligned clinical answers. Further experimentation is necessary to improve adherence to the dataset answer style, structural completion, web artifact pollution, and premature truncation. This includes but is not limited to stronger LLMs, more compute power, parameter expansion, RAG integration, and an automatic RLAIF evaluation pipeline.
+

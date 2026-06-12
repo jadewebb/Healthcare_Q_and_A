@@ -69,5 +69,5 @@ ROUGE-1 | 0.3371
 ROUGE-2 | 0.1459
 ROUGE-L: 0.2088
 
-Performance demonstrates that the model successfully generates coherent, multi-word medical phrasing that aligns with professional, consumer-aligned clinical answers. Further experimentation is necessary to improve adherence to the dataset answer style, structural completion, web artifact pollution, and premature truncation. This includes but is not limited to stronger LLMs, more compute power, parameter expansion, RAG integration, and an automatic RLAIF evaluation pipeline.
+Performance demonstrates that the model successfully generates coherent, **multi-word medical phrasing** that aligns with professional, consumer-aligned clinical answers. Further experimentation is necessary to **improve answer quality**, including adherence to the dataset answer style, structural completion, web artifact pollution, and premature truncation. This includes but is not limited to stronger LLMs, more compute power, parameter expansion, RAG integration, and an automatic RLAIF evaluation pipeline.
 

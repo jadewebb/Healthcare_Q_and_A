@@ -12,7 +12,24 @@ MedQuAD (Medical Question Answering Dataset)
 
    - 16412 samples of consumer medical question-answer pairs about diseases, drugs, and other medical entities, extracted from 12 trusted medical websites
    
-      - Subset of the original 47457-sample MedQuAD dataset, as samples under the MedlinePlus copyright were removed
+      - Subset of the original 47457 sample MedQuAD dataset, as samples under the MedlinePlus copyright were removed
+    
+# Preprocessing
 
 Dataset was loaded, inspected, and cleaned down to 16345 samples, then saved as a Python Dataset
+
+Dataset was shuffled and split into training, validation, and testing sets (80:10:10)
+
+Question-answer pairs were mapped to the proper "messages" format for compatability with Llama 3.1
+
+   ```"messages": [
+          {"role": "user", "content": <question>},
+          {"role": "assistant", "content": <answer>}
+      ]```
+
+# Llama 3.1 Fine-Tuning using QLoRA
+
+
+
+
 

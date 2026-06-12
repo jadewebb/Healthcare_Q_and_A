@@ -47,7 +47,13 @@ Question-answer pairs were mapped to the proper conversation format for compatab
 
        - **Experiment Monitoring**: real-time TensorBoard telemetry, automated step-wise validation and checkpointing, early stopping
 
-Fine-tuning was terminated after 200 steps, as the validation loss stabilized
+Fine-tuning was terminated after 200 steps due to validation loss stabilization, with the final metrics being:
+
+Step | Training Loss | Validation Loss | Entropy | Mean Token Accuracy
+--- | --- | --- | --- | ---
+200 | 1.009682 | 0.9677 | 0.96504 | 0.748658
+
+Visualizations were created for Training and Validation Loss, Entropy, and Accuracy
 
 ![Llama 3.1 QLoRA Performance Metrics](https://raw.githubusercontent.com/jadewebb/Healthcare_Q_and_A/main/log_metrics.png)
 

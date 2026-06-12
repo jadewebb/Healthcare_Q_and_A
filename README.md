@@ -1,8 +1,8 @@
-# Healthcare Q&A
+## Healthcare Q&A
 
 Fine-tuning Llama 3.1 using QLoRA to perform healthcare Q&A
 
-# Dataset
+## Dataset
 
 MedQuAD (Medical Question Answering Dataset)
  
@@ -14,7 +14,7 @@ MedQuAD (Medical Question Answering Dataset)
    
       - Subset of the original 47457 sample MedQuAD dataset, as samples under the MedlinePlus copyright were removed
     
-# Preprocessing
+## Preprocessing
 
 Dataset was loaded, inspected, and cleaned down to 16345 samples, then saved as a Python Dataset
 
@@ -29,7 +29,7 @@ Question-answer pairs were mapped to the proper conversation format for compatab
       ]
    ```
 
-# Llama 3.1 Fine-Tuning using QLoRA
+## Llama 3.1 Fine-Tuning using QLoRA
 
 **Llama 3.1 8B Instruct** tokenizer and pretrained model were loaded with **4-bit normal float quantization** using transformers
 

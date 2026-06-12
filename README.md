@@ -53,7 +53,7 @@ Step | Training Loss | Validation Loss | Entropy | Mean Token Accuracy
 --- | --- | --- | --- | ---
 200 | 1.009682 | 0.9677 | 0.96504 | 0.748658
 
-Visualizations were created for Training and Validation Loss, Entropy, and Accuracy
+Visualizations were created for training and validation loss, entropy, and accuracy
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/jadewebb/Healthcare_Q_and_A/main/log_metrics.png" width="700"></p>

@@ -55,6 +55,6 @@ Step | Training Loss | Validation Loss | Entropy | Mean Token Accuracy
 
 Visualizations were created for Training and Validation Loss, Entropy, and Accuracy
 
-![Llama 3.1 QLoRA Performance Metrics](https://raw.githubusercontent.com/jadewebb/Healthcare_Q_and_A/main/log_metrics.png)
-
+<p align="center">
+<img src="https://raw.githubusercontent.com/jadewebb/Healthcare_Q_and_A/main/log_metrics.png" width="700"></p>
 

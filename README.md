@@ -4,7 +4,7 @@ Fine-tuning Llama 3.1 using QLoRA to perform healthcare Q&A
 
 ## Dataset
 
-MedQuAD (Medical Question Answering Dataset)
+**MedQuAD** (Medical Question Answering Dataset)
  
    - Kaggle Source: https://www.kaggle.com/datasets/jpmiller/layoutlm
 
